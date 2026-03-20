@@ -1,4 +1,4 @@
-# quadratic-solver
+# quad-solver
 
 > Solve quadratic equations of the form **ax² + bx + c = 0** — via CLI or REST API.
 
@@ -9,13 +9,13 @@
 **Global** — to use the CLI from anywhere:
 
 ```bash
-npm install -g quadratic-solver
+npm install -g quad-solver
 ```
 
 **Local** — to run the API server in a project:
 
 ```bash
-npm install quadratic-solver
+npm install quad-solver
 ```
 
 ---
@@ -23,7 +23,7 @@ npm install quadratic-solver
 ## CLI
 
 ```bash
-quadratic-solver <a> <b> <c>
+quad-solver <a> <b> <c>
 ```
 
 Solves `ax² + bx + c = 0` and prints the result.
@@ -31,13 +31,13 @@ Solves `ax² + bx + c = 0` and prints the result.
 ### Examples
 
 ```bash
-quadratic-solver 1 -5 6
+quad-solver 1 -5 6
 # { roots: [ 3, 2 ], discriminant: 1 }
 
-quadratic-solver 1 -2 1
+quad-solver 1 -2 1
 # { roots: [ 1 ], discriminant: 0 }
 
-quadratic-solver 1 0 1
+quad-solver 1 0 1
 # { roots: 'no real roots', discriminant: -4 }
 ```
 
@@ -48,7 +48,7 @@ quadratic-solver 1 0 1
 Start the server:
 
 ```bash
-npx quadratic-solver-server
+npx quad-solver-server
 # or, if installed locally:
 npm start
 ```
@@ -110,7 +110,7 @@ curl -X POST http://localhost:3000/solve \
 The core function exported by this package.
 
 ```js
-import { solve } from "quadratic-solver";
+import { solve } from "quad-solver";
 
 solve(1, -5, 6); // { roots: [3, 2],          discriminant: 1  }
 solve(1, -2, 1); // { roots: [1],             discriminant: 0  }
@@ -138,7 +138,7 @@ solve(1, 0, 1); // { roots: 'no real roots', discriminant: -4 }
 
 ## Author
 
-**Temiloluwa Tomilola David**
+**Temiloluwa Tomilola David [Mac]**
 
 ---
 
