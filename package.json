@@ -1,0 +1,24 @@
+{
+  "name": "quadratic-solver",
+  "version": "1.0.0",
+  "description": "Solve quadratic equations ax² + bx + c = 0",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "quadratic-solver": "./src/cli.js"
+  },
+  "files": ["index.js", "src/", "README.md"],
+  "keywords": ["quadratic", "math", "solver", "algebra", "equation", "roots"],
+  "author": "Temiloluwa Tomilola David",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
